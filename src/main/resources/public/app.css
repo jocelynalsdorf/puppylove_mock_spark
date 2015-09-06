@@ -1,100 +1,75 @@
-h1{
-  font-family: 'Fredoka One', cursive;
-  font-size: 50px;
-  text-align: center;
-  color: #9197AE;
-}
-
-h2{
-  font-family: 'Fredoka One', cursive;
-  font-size: 35px;
-  text-align: center;
-  color: #49197AE;
-}
-
-h3 {
-  font-family: 'Fredoka One', cursive;
-  font-size: 28px;
-  text-align: center;
-  color: #F02D3A;
-}
-a {
-  color: #9197AE;
-}
-.btn-links {
-  background-color: #9197AE;
-  border-color: #9197AE;
-}
-
-.btn-links a {
-  color: white;
-}
-
-.well {
-  background-color: #EFF6EE;
-}
 
 body {
-  background-color: #fff;
+  font-family: 'Open Sans', sans-serif;
 }
-.btn-default{
-  background-color: #F02D3A;
-  border-color:#F02D3A;
-  color: white;
+.navbar-inverse {
+   font-family: 'Open Sans', sans-serif;
 }
 
-.btn-default:hover{
-  background-color: #F02D3A;
-  border-color:#F02D3A;
-  color: white;
-}
-.btn-default a{
-  color: white;
+ul {
+  list-style: none;
 }
 
-.navbar-default {
-  background-color: #273043;
-  color:#EFF6EE;
+h1 {
+  font-family: 'Luckiest Guy', cursive;
 }
 
-.btn-info {
-  background-color: #273043;
-  border-color: #273043;
-  color: #EFF6EE;
+h2 {
+  font-family: 'Patrick Hand', cursive;
+}
+.jumbotron {
+  text-align: center;
+}
+.jumbotron h1 {
+  
+  font-family: 'Luckiest Guy', cursive;
+  color: #e22620;
 }
 
-.btn-info:hover{
-  background-color: #F02D3A;
-  border-color:#F02D3A;
+.jumbotron h3 {
+
+  font-family: 'Patrick Hand', cursive;
+  background-color:#ececec;
+}
+
+.btn-primary-orange {
+  background-color: #ebac64;
   color: white;
 }
-.btn-success{
-  background-color: #273043;
-  border-color:#273043;
-  color: white;
+.modal-body p {
+  font-family: 'Patrick Hand', cursive;
+  font-size: 18px;
 }
 
-.btn-success:hover{
-  background-color: #9197AE;
-  border-color:#9197AE;
-  color: white;
-}
-.btn-danger {
-  background-color: #F02D3A;
-  border-color:#F02D3A;
-  color: white;
+.title-span {
+  font-size: 24px;
+  font-family: 'Luckiest Guy', cursive;
+  color: #e22620;
 }
 
-.navbar-right {
-    float: right!important;
-    margin-right: 10px;
+.modal-title {
+  color: rgb(119, 119, 119);
+  font-family: 'Patrick Hand', cursive;
+  font-size: 24px;
 }
 
-.navbar-default .navbar-brand {
-  color: red;
-  font-family: 'Fredoka One', cursive;
-  font-size: 30px;
+.panel-title {
+  font-size: 21px;
+  font-family: 'Patrick Hand', cursive;
 }
-.container {
-  padding-top: 50px;
+
+
+
+/*---- all dogs page---*/
+
+
+ul.thumbnails li.span4:nth-child(3n + 4) {
+  margin-left : 0px;
+} 
+
+.title-alldogs {
+  text-align:center;
+  font-size: 44px;
+  font-family: 'Luckiest Guy', cursive;
+  color: #ebac64;
 }

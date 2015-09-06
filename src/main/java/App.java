@@ -148,5 +148,15 @@ public class App {
         return null;
       });
 
+ //delete a brand only from one store
+      post("/:store_id/brands/:id/remove", (request, response) -> {
+        int brandId = Integer.parseInt(request.params(":id"));
+        Store store = Store.find(Integer.parseInt(request.params(":store_id")));
+        Brand brand = Brand.find(brandId);
+        brand.deleteFromStore(store);
+        response.redirect("/stores");
+        return null;
+      });
+
  }//end of main
 }//end appclass

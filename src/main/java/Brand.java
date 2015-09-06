@@ -89,6 +89,16 @@ public class Brand {
           .executeUpdate();
     }
   }
+//test out this method to only delete from a this store
+  public void deleteFromStore(Store store) {
+    try(Connection con = DB.sql2o.open()) {
+      String joinDeleteQuery = "DELETE FROM stores_brands WHERE brand_id = :brandId AND store_id = :storeId";
+        con.createQuery(joinDeleteQuery)
+          .addParameter("brandId", this.getId())
+           .addParameter("storeId", store.getId())
+          .executeUpdate();
+    }
+  }
 
   public void update(String description) {
     try(Connection con = DB.sql2o.open()) {
