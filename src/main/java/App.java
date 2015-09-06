@@ -18,6 +18,12 @@ public class App {
         return new ModelAndView(model, layout);
       }, new VelocityTemplateEngine());
 
+      get("/new-account", (request, response) -> {
+        HashMap<String, Object> model = new HashMap<String, Object>();
+        model.put("template", "templates/new-account.vtl");
+        return new ModelAndView(model, layout);
+      }, new VelocityTemplateEngine());
+
       get("/brands", (request, response) -> {
         HashMap<String, Object> model = new HashMap<String, Object>();
         List<Brand> brands = Brand.all();
