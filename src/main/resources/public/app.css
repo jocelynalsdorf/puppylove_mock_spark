@@ -58,7 +58,9 @@ h2 {
   font-family: 'Patrick Hand', cursive;
 }
 
-
+.navbar-nav li a:hover {
+  background-color: #e74b47;
+}
 
 /*---- all dogs page---*/
 
@@ -72,4 +74,13 @@ ul.thumbnails li.span4:nth-child(3n + 4) {
   font-size: 44px;
   font-family: 'Luckiest Guy', cursive;
   color: #ebac64;
+}
+
+
+.dog-img {
+    display: block;
+    max-width:150px;
+    max-height:150px;
+    width: auto;
+    height: auto;
 }

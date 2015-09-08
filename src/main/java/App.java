@@ -30,11 +30,11 @@ public class App {
         return new ModelAndView(model, layout);
       }, new VelocityTemplateEngine());
 
-      get("/brands", (request, response) -> {
+      get("/dogs", (request, response) -> {
         HashMap<String, Object> model = new HashMap<String, Object>();
         List<Brand> brands = Brand.all();
         model.put("brands", brands);
-        model.put("template", "templates/brands.vtl");
+        model.put("template", "templates/dogs.vtl");
         return new ModelAndView(model, layout);
         }, new VelocityTemplateEngine());
 
